@@ -11,5 +11,8 @@
     --font-size-heading-md: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);     /* 24px → 32px */
     --font-size-heading-sm: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);   /* 16px → 18px */
     --font-size-caption:    clamp(0.875rem, 0.8rem + 0.3vw, 1rem);   /* 14px → 16px */
-   
+
+    --button-height-size: clamp(2rem, 1.7rem + 0.9vw, 2.25rem);       /* 32px → 36px */
+    --button-width-size: clamp(6.25rem, 5rem + 3.9vw, 7.5rem);        /* 100px → 120px */
+    --button-border-radius: clamp(0.5rem, 0.4rem + 0.35vw, 0.625rem); /* 8px → 10px */
 }
