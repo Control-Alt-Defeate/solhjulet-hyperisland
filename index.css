@@ -44,6 +44,24 @@
   z-index: 0;
 }
 
+#div-hero-homepage {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-top: 25%;
+  font-family: var(--font-family);
+}
+
+#hero-title {
+    font-size: var(--font-size-heading-lg);
+}
+
+#sub-title{
+    font-size: var(--font-size-heading-sm);
+}
+
 .navbar-homepage {
   position: absolute;
   top: 0;
@@ -66,7 +84,7 @@ nav {
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 16px;
+    font-size: var(--font-size-heading-sm);
     color: white;   
 }
 
@@ -97,12 +115,12 @@ nav {
 }
 
 #navbar-login-button {
-    height: 36px;
-    width: 120px;
-    color: #0B2341;
+    height: var(--button-height-size);
+    width: var(--button-width-size);
+    color: var(--primary-color);
     background-color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: var(--button-border-radius);
 }
 
 a {
