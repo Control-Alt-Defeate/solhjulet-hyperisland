@@ -1,13 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <title>SOLHJULET</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="facilities-page">
+      <!-- Page Header -->
+      <header class="page-header">
+        <h1>Facilities and Services</h1>
+
+        <p>
+          Find information, documents and services to make everyday life in our
+          community easier.
+        </p>
+      </header>
+
+      <!-- Search -->
+      <div class="search-wrapper">
+        <label class="search-box">
+          <input
+            type="search"
+            placeholder="What are you looking for?"
+            aria-label="Search facilities and services"
+          />
+
+          <span class="search-icon"></span>
+        </label>
+      </div>
+
+      <!-- Services -->
+      <section class="services-grid">
+        <!-- Laundry -->
+        <article class="service-card">
+          <div class="card-top">
+            <span>Laundry</span>
+          </div>
+
+          <div class="card-image laundry">
+            <img
+              src="images/laundry.jpg"
+              alt="Laundry room with washing machine"
+            />
+          </div>
+
+          <div class="card-content">
+            <p class="description">
+              Here you can find information about the laundry facilities in your
+              building, including how to book a time slot and any rules or
+              guidelines for using the machines.
+            </p>
+
+            <a href="#" class="primary-button"> Read more </a>
+          </div>
+        </article>
+
+        <!-- Guest Parking -->
+        <article class="service-card">
+          <div class="card-top">
+            <span>Guest parking</span>
+          </div>
+
+          <div class="card-image guest">
+            <img src="images/guest.jpg" alt="Cars parked in a parking garage" />
+          </div>
+
+          <div class="card-content">
+            <p class="description">
+              Here you can find information about guest parking in your
+              building, including how to obtain a guest parking permit and any
+              rules or guidelines for using the parking facilities.
+            </p>
+
+            <a href="#" class="primary-button"> Read more </a>
+          </div>
+        </article>
+
+        <!-- Waste -->
+        <article class="service-card">
+          <div class="card-top">
+            <span>Recycling and waste</span>
+          </div>
+
+          <div class="card-image waste">
+            <img src="images/waste.jpg" alt="Recycling and waste bins" />
+          </div>
+
+          <div class="card-content">
+            <p class="description">
+              Here you can find information about recycling and waste management
+              in your building, including how to properly dispose of different
+              types of waste and any rules for using the recycling facilities.
+            </p>
+
+            <a href="#" class="primary-button"> Read more </a>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
