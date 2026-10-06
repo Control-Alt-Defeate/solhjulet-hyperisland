@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
     --primary-color: #0B2341;
@@ -15,4 +16,97 @@
     --button-height-size: clamp(2rem, 1.7rem + 0.9vw, 2.25rem);       /* 32px → 36px */
     --button-width-size: clamp(6.25rem, 5rem + 3.9vw, 7.5rem);        /* 100px → 120px */
     --button-border-radius: clamp(0.5rem, 0.4rem + 0.35vw, 0.625rem); /* 8px → 10px */
+}
+
+/* GLOBAL */
+ body {
+    margin: 0;
+ }
+
+ /* =========================
+   HOMEPAGE
+========================= */
+
+.nav-links-style {
+    font-family: 'Inter', sans-serif;
+ }
+
+/* SECTION NAV */
+
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.navbar-homepage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: rgb(0,0,0, 0.5);
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 16px;
+    color: white;   
+}
+
+#nav-img-logo {
+    height: 5vh;
+}
+
+.nav-logo-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-logo-div img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+#nav-logo-text {
+    font-size: 24px;
+    font-family: 'Inknut Antiqua', sans-serif;
+    color: white;
+}
+
+#navbar-login-button {
+    height: 36px;
+    width: 120px;
+    color: #0B2341;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
 }
