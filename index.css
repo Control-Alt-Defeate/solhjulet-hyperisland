@@ -1,18 +1,331 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --primary-color: #0B2341;
-    --secondary-color: #102D50;
-    --tertiary-color: #38536B;
-    --background-color: #EEF3F5;
+  --primary-color: #0b2341;
+  --secondary-color: #102d50;
+  --tertiary-color: #38536b;
+  --background-color: #eef3f5;
 
-    --font-family: 'Inter', sans-serif;
-    --font-size-heading-lg: clamp(2.5rem, 1.6rem + 3.6vw, 4.25rem);  /* 40px → 68px */
-    --font-size-heading-md: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);     /* 24px → 32px */
-    --font-size-heading-sm: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);   /* 16px → 18px */
-    --font-size-caption:    clamp(0.875rem, 0.8rem + 0.3vw, 1rem);   /* 14px → 16px */
+  --font-family: "Inter", sans-serif;
+  --font-size-heading-lg: clamp(
+    2.5rem,
+    1.6rem + 3.6vw,
+    4.25rem
+  ); /* 40px → 68px */
+  --font-size-heading-md: clamp(1.5rem, 1.2rem + 1.2vw, 2rem); /* 24px → 32px */
+  --font-size-heading-sm: clamp(
+    1rem,
+    0.9rem + 0.4vw,
+    1.125rem
+  ); /* 16px → 18px */
+  --font-size-caption: clamp(0.875rem, 0.8rem + 0.3vw, 1rem); /* 14px → 16px */
 
-    --button-height-size: clamp(2rem, 1.7rem + 0.9vw, 2.25rem);       /* 32px → 36px */
-    --button-width-size: clamp(6.25rem, 5rem + 3.9vw, 7.5rem);        /* 100px → 120px */
-    --button-border-radius: clamp(0.5rem, 0.4rem + 0.35vw, 0.625rem); /* 8px → 10px */
+  --button-height-size: clamp(2rem, 1.7rem + 0.9vw, 2.25rem); /* 32px → 36px */
+  --button-width-size: clamp(6.25rem, 5rem + 3.9vw, 7.5rem); /* 100px → 120px */
+  --button-border-radius: clamp(
+    0.5rem,
+    0.4rem + 0.35vw,
+    0.625rem
+  ); /* 8px → 10px */
+}
+
+/* =========================================
+   RESIDENTS PAGE
+   ========================================= */
+
+.residents-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 2rem 4%;
+
+  background: var(--background-color);
+  color: #000;
+
+  font-family: var(--font-family);
+
+  box-sizing: border-box;
+}
+
+.residents-page *,
+.residents-page *::before,
+.residents-page *::after {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.residents-header {
+  margin: 0 0 1.5rem;
+}
+
+.residents-header h1 {
+  margin: 0 0 1.5rem;
+
+  font-size: var(--font-size-heading-md);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.residents-header p {
+  max-width: 900px;
+
+  margin: 0;
+
+  font-size: var(--font-size-caption);
+  line-height: 1.5;
+}
+
+/* =========================================
+   SEARCH
+   ========================================= */
+
+.residents-search {
+  width: 100%;
+
+  margin-bottom: 2rem;
+}
+
+.residents-search-box {
+  position: relative;
+
+  display: block;
+
+  width: min(540px, 100%);
+}
+
+.residents-search-box input {
+  display: block;
+
+  width: 100%;
+  height: var(--button-height-size);
+
+  padding: 0 3.5rem 0 1.1rem;
+
+  border: 1px solid #222;
+  border-radius: var(--button-border-radius);
+
+  background: #fff;
+
+  color: #000;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+
+  outline: none;
+}
+
+.residents-search-box input::placeholder {
+  color: #111;
+  opacity: 1;
+}
+
+.residents-search-box input:focus {
+  border-color: var(--primary-color);
+}
+
+/* =========================================
+   SEARCH ICON
+   ========================================= */
+
+.residents-search-icon {
+  position: absolute;
+
+  top: 50%;
+  right: 1.2rem;
+
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid #111;
+  border-radius: 50%;
+
+  transform: translateY(-60%);
+
+  pointer-events: none;
+}
+
+.residents-search-icon::after {
+  content: "";
+
+  position: absolute;
+
+  right: -5px;
+  bottom: -3px;
+
+  width: 7px;
+  height: 2px;
+
+  background: #111;
+
+  transform: rotate(45deg);
+}
+
+/* =========================================
+   CARDS GRID
+   ========================================= */
+
+.residents-grid {
+  width: 100%;
+  max-width: 1150px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  column-gap: clamp(2rem, 7vw, 6rem);
+  row-gap: 1.5rem;
+}
+
+/* =========================================
+   CARD
+   ========================================= */
+
+.resident-card {
+  width: 100%;
+  height: 220px;
+  min-height: 220px;
+
+  background: #fff;
+
+  border: 1px solid #d8dfe3;
+  border-radius: var(--button-border-radius);
+
+  overflow: hidden;
+}
+
+/* =========================================
+   CARD CONTENT
+   ========================================= */
+
+.resident-card-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.25rem;
+}
+
+/* =========================================
+   CARD TITLE
+   ========================================= */
+
+.resident-card h2 {
+  margin: 0;
+
+  font-size: var(--font-size-caption);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* =========================================
+   CARD DESCRIPTION
+   ========================================= */
+
+.resident-card p {
+  width: 100%;
+  max-width: 300px;
+
+  margin: 1.75rem 0 0;
+
+  font-size: var(--font-size-caption);
+  line-height: 1.45;
+}
+
+/* =========================================
+   CARD BUTTON
+
+   IMPORTANT:
+   No absolute positioning.
+   No global button width.
+   It stays inside the card.
+   ========================================= */
+
+.resident-card .resident-card-button {
+  position: static;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 105px;
+  max-width: 105px;
+
+  height: var(--button-height-size);
+  min-height: var(--button-height-size);
+
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 0;
+
+  padding: 0;
+
+  flex: 0 0 auto;
+
+  background: var(--primary-color);
+  color: #fff;
+
+  border: none;
+  border-radius: var(--button-border-radius);
+
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  font-weight: 500;
+  line-height: 1;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+.resident-card .resident-card-button:hover {
+  background: var(--secondary-color);
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+  .residents-page {
+    padding: 2rem 5%;
+  }
+
+  .residents-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .residents-page {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .residents-search-box {
+    width: 100%;
+  }
+
+  .residents-grid {
+    grid-template-columns: 1fr;
+
+    gap: 1.25rem;
+  }
+
+  .resident-card {
+    height: 220px;
+    min-height: 220px;
+  }
 }
