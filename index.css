@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-color: #0B2341;
+    --secondary-color: #102D50;
+    --tertiary-color: #38536B;
+    --background-color: #EEF3F5;
+
+    --font-family: 'Inter', sans-serif;
+    --font-size-heading-lg: clamp(2.5rem, 1.6rem + 3.6vw, 4.25rem);  /* 40px → 68px */
+    --font-size-heading-md: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);     /* 24px → 32px */
+    --font-size-heading-sm: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);   /* 16px → 18px */
+    --font-size-caption:    clamp(0.875rem, 0.8rem + 0.3vw, 1rem);   /* 14px → 16px */
+   
+}
