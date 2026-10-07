@@ -102,6 +102,29 @@ body {
     line-height: 1.5;
 }
 
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: var(--primary-color);
+}
+
+.navbar-other-pages {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: var(--primary-color);
+    z-index: 10;
+}
 
 /* =========================
    NAVIGATION
