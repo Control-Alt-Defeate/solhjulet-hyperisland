@@ -8,6 +8,61 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <header>
+      <!-- =========================
+         NAVBAR
+    ========================== -->
+      <nav class="navbar-other-pages" aria-label="Main navigation">
+        <div class="nav-logo-div">
+          <a href="index.html" aria-label="Solhjulet home">
+            <img id="nav-img-logo" src="assets/logo.png" alt="Solhjulet logo" />
+          </a>
+
+          <span id="nav-logo-text"> SOLHJULET </span>
+        </div>
+
+        <!-- Mobile menu -->
+        <input type="checkbox" id="menu-toggle" />
+
+        <label
+          for="menu-toggle"
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+        >
+          <span>☰</span>
+          <span>✕</span>
+        </label>
+
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="for_residents.html">For residents</a>
+            </li>
+
+            <li>
+              <a href="facilities_services.html"> Facilities and Services </a>
+            </li>
+
+            <li>
+              <a href="news_updates.html"> News and Updates </a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+
+          <div id="nav-login-button">
+            <button id="navbar-login-button" type="button">LOGIN</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main class="residents-page">
       <header class="residents-header">
         <h1>For Residents</h1>
@@ -102,5 +157,55 @@
         </article>
       </section>
     </main>
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column copyright">
+          <div class="footer-logo">SOLHJULET</div>
+
+          <p>Copyrights Solhjulet</p>
+          <p>All rights reserved.</p>
+        </div>
+
+        <div class="footer-column">
+          <h2>Home</h2>
+
+          <a href="for_residents.html">Residents</a>
+
+          <a href="news_updates.html"> News and updates </a>
+
+          <a href="facilities_services.html"> Facilities and services </a>
+
+          <a href="about.html"> About us </a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Support</h2>
+
+          <a href="#">Help center</a>
+
+          <a href="#">Terms of service</a>
+
+          <a href="#">Legal</a>
+
+          <a href="#">Privacy policy</a>
+
+          <a href="#">Status</a>
+        </div>
+
+        <div class="footer-column newsletter">
+          <h2>Stay up to date</h2>
+
+          <div class="newsletter-input">
+            <input type="email" placeholder="Your email address" />
+
+            <button type="button" aria-label="Subscribe">➤</button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
