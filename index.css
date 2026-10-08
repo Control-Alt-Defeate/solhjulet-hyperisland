@@ -504,7 +504,7 @@ header {
    TABLET
 ========================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .navbar-homepage {
     padding: 10px 3%;
   }
@@ -543,7 +543,8 @@ header {
 
 /* ========================= MOBILE ========================= */
 
-@media (max-width: 700px) {
+/* The full nav needs about 830px, so the hamburger menu takes over below 900px */
+@media (max-width: 900px) {
   .navbar-homepage {
     padding: 10px 20px;
   }
@@ -622,7 +623,9 @@ header {
   #menu-toggle:checked + .hamburger span:last-child {
     display: block;
   }
+}
 
+@media (max-width: 700px) {
   /*------------------------------ Hero -------------------------------------> */
 
   #div-hero-homepage {
