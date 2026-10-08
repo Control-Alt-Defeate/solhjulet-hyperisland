@@ -41,7 +41,7 @@ marked in the nav. Both are built by `js/layout.js` (see below).
 | Facilities & Services | `pages/facilities_services.html` | Built |
 | News & Updates | `pages/news_updates.html` | Built |
 | About Solhjulet | `pages/about.html` | Built, includes contact details |
-| Page not found | `pages/404.html` | Built |
+| Page not found | `404.html` | Built, shown by GitHub Pages for any missing URL |
 
 
 ## Project structure
@@ -49,17 +49,23 @@ marked in the nav. Both are built by `js/layout.js` (see below).
 ```text
 solhjulet-hyperisland/
 ├── index.html                  Home page
+├── 404.html                    Page not found (must stay in the root for GitHub Pages)
 ├── index.css                   Shared styles: colours, fonts, nav, footer, home
 ├── js/
-│   └── layout.js               Shared nav and footer for every page
+│   ├── layout.js               Shared nav and footer for every page
+│   └── news_updates.js         Category filter for the news cards
 ├── assets/                     Logo and images
 └── pages/
-    ├── for_residents.html
+    ├── for_residents.html + .css
     ├── facilities_services.html + .css
-    ├── news_updates.html + .css + .js (category filter)
+    ├── news_updates.html + .css
     ├── about.html + .css
-    └── 404.html + .css
+    └── 404.css                 Styles for the root 404.html
 ```
+
+GitHub Pages shows `404.html` for any address that doesn't exist, at that
+address. That's why its paths are written from the site root, and a small
+script in its `<head>` sets the right root on github.io.
 
 ### Shared nav and footer
 
