@@ -1,26 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <title>SOLHJULET</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <header> 
-      <!-- =========================
-         NAVBAR
-    ========================== -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
 
-    <header>
-        <nav class="navbar-other-pages" aria-label="Main navigation">
+    <!-- HERO -->
+    <section class="hero">
 
+        <!-- BACKGROUND IMAGE -->
+        <img
+            src="assets/hero-img.png"
+            alt=""
+            class="hero-img"
+        >
+
+        <!-- HERO TEXT -->
+        <div id="div-hero-homepage">
+
+            <h1 id="hero-title">
+                Welcome to Solhjulet
+            </h1>
+
+            <p id="sub-title">
+                BRF Solhjulet is a well-managed housing association
+                in the heart of Stockholm, offering a safe, friendly
+                and sustainable place to live.
+            </p>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <nav
+            class="navbar-homepage"
+            aria-label="Main navigation"
+        >
+
+            <!-- LOGO -->
             <div class="nav-logo-div">
-                <a href="index.html" aria-label="Solhjulet home">
+
+                <a
+                    href="index.html"
+                    aria-label="Solhjulet home"
+                >
                     <img
                         id="nav-img-logo"
-                        src="images/logo.png"
+                        src="assets/logo.png"
                         alt="Solhjulet logo"
                     >
                 </a>
@@ -28,30 +58,42 @@
                 <span id="nav-logo-text">
                     SOLHJULET
                 </span>
+
             </div>
 
-            <!-- Mobile menu -->
-            <input type="checkbox" id="menu-toggle">
 
+            <!-- MOBILE MENU CHECKBOX -->
+            <input
+                type="checkbox"
+                id="menu-toggle"
+            >
+
+            <!-- HAMBURGER -->
             <label
                 for="menu-toggle"
                 class="hamburger"
                 aria-label="Toggle navigation menu"
             >
-                <span>☰</span>
-                <span>✕</span>
+                <span aria-hidden="true">☰</span>
+                <span aria-hidden="true">✕</span>
             </label>
 
+
+            <!-- NAV MENU -->
             <div class="nav-menu">
 
                 <ul class="nav-links">
 
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html">
+                            Home
+                        </a>
                     </li>
 
                     <li>
-                        <a href="for_residents.html">For residents</a>
+                        <a href="for_residents.html">
+                            For Residents
+                        </a>
                     </li>
 
                     <li>
@@ -61,196 +103,125 @@
                     </li>
 
                     <li>
-                        <a href="news_updates.html">
+                        <a href="pages/news_updates.html">
                             News and Updates
                         </a>
                     </li>
 
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html">
+                            About
+                        </a>
                     </li>
 
                 </ul>
 
+
+                <!-- LOGIN -->
                 <div id="nav-login-button">
-                    <button id="navbar-login-button" type="button">
+
+                    <button
+                        id="navbar-login-button"
+                        type="button"
+                    >
                         LOGIN
                     </button>
+
                 </div>
 
             </div>
 
         </nav>
-    </header>
+
+    </section>
 
 
-    <main class="facilities-page">
-      <!-- Page Header -->
-      <header class="page-header">
-        <h1>Facilities and Services</h1>
-
-        <p>
-          Find information, documents and services to make everyday life in our
-          community easier.
-        </p>
-      </header>
-
-      <!-- Search -->
-      <div class="search-wrapper">
-        <label class="search-box">
-          <input
-            type="search"
-            placeholder="What are you looking for?"
-            aria-label="Search facilities and services"
-          />
-
-          <span class="search-icon"></span>
-        </label>
-      </div>
-
-      <!-- Services -->
-      <section class="services-grid">
-        <!-- Laundry -->
-        <article class="service-card">
-          <div class="card-top">
-            <span>Laundry</span>
-          </div>
-
-          <div class="card-image laundry">
-            <img
-              src="images/laundry.jpg"
-              alt="Laundry room with washing machine"
-            />
-          </div>
-
-          <div class="card-content">
-            <p class="description">
-              Here you can find information about the laundry facilities in your
-              building, including how to book a time slot and any rules or
-              guidelines for using the machines.
-            </p>
-
-            <a href="#" class="primary-button"> Read more </a>
-          </div>
-        </article>
-
-        <!-- Guest Parking -->
-        <article class="service-card">
-          <div class="card-top">
-            <span>Guest parking</span>
-          </div>
-
-          <div class="card-image guest">
-            <img src="images/guest.jpg" alt="Cars parked in a parking garage" />
-          </div>
-
-          <div class="card-content">
-            <p class="description">
-              Here you can find information about guest parking in your
-              building, including how to obtain a guest parking permit and any
-              rules or guidelines for using the parking facilities.
-            </p>
-
-            <a href="#" class="primary-button"> Read more </a>
-          </div>
-        </article>
-
-        <!-- Waste -->
-        <article class="service-card">
-          <div class="card-top">
-            <span>Recycling and waste</span>
-          </div>
-
-          <div class="card-image waste">
-            <img src="images/waste.jpg" alt="Recycling and waste bins" />
-          </div>
-
-          <div class="card-content">
-            <p class="description">
-              Here you can find information about recycling and waste management
-              in your building, including how to properly dispose of different
-              types of waste and any rules for using the recycling facilities.
-            </p>
-
-            <a href="#" class="primary-button"> Read more </a>
-          </div>
-        </article>
-      </section>
-       </main>
-      <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer class="footer">
 
         <div class="footer-container">
 
+            <!-- COPYRIGHT -->
             <div class="footer-column copyright">
 
-                <div class="footer-logo">
-                    SOLHJULET
-                </div>
+                <p>
+                    Copyright Solhjulet
+                </p>
 
-                <p>Copyrights Solhjulet</p>
-                <p>All rights reserved.</p>
+                <p>
+                    All rights reserved.
+                </p>
 
             </div>
 
 
+            <!-- HOME -->
             <div class="footer-column">
 
-                <h2>Home</h2>
+                <h2>
+                    Home
+                </h2>
 
-                <a href="for_residents.html">Residents</a>
+                <a href="index.html">
+                    Home
+                </a>
 
-                <a href="news_updates.html">
-                    News and updates
+                <a href="for_residents.html">
+                    Residents
+                </a>
+
+                <a href="pages/news_updates.html">
+                    News and Updates
                 </a>
 
                 <a href="facilities_services.html">
-                    Facilities and services
+                    Facilities and Services
                 </a>
 
                 <a href="about.html">
-                    About us
+                    About Us
                 </a>
 
             </div>
 
 
+            <!-- SUPPORT -->
             <div class="footer-column">
 
-                <h2>Support</h2>
+                <h2>
+                    Support
+                </h2>
 
-                <a href="#">Help center</a>
+                <a href="#">
+                    Help Center
+                </a>
 
-                <a href="#">Terms of service</a>
+                <a href="#">
+                    Terms of Service
+                </a>
 
-                <a href="#">Legal</a>
+                <a href="#">
+                    Legal
+                </a>
 
-                <a href="#">Privacy policy</a>
+                <a href="#">
+                    Privacy Policy
+                </a>
 
-                <a href="#">Status</a>
+                <a href="#">
+                    Status
+                </a>
 
             </div>
 
 
-            <div class="footer-column newsletter">
+            <!-- STUDENT PROJECT -->
+            <div class="footer-column student-project">
 
-                <h2>Stay up to date</h2>
-
-                <div class="newsletter-input">
-
-                    <input
-                        type="email"
-                        placeholder="Your email address"
-                    >
-
-                    <button type="button" aria-label="Subscribe">
-                        ➤
-                    </button>
-
-                </div>
+                <p>
+                    This project is made in the student
+                    context of Hyper Island.
+                </p>
 
             </div>
 
@@ -258,6 +229,5 @@
 
     </footer>
 
-   
-  </body>
+</body>
 </html>
