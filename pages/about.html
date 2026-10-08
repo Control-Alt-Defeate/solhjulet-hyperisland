@@ -1,172 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <title>About Us | SOLHJULET</title>
-    <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="./about.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="./about.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar-other-pages" aria-label="Main navigation">
-            <div class="nav-logo-div">
-                <a href="../index.html" aria-label="Solhjulet home">
-                    <img id="nav-img-logo" src="../assets/logo.png" alt="Solhjulet logo">
-                </a>
-                <span id="nav-logo-text">SOLHJULET</span>
-            </div>
+      <nav class="navbar-other-pages" aria-label="Main navigation">
+        <div class="nav-logo-div">
+          <a href="../pages/index.html" aria-label="Solhjulet home">
+            <img
+              id="nav-img-logo"
+              src="../assets/logo.png"
+              alt="Solhjulet logo"
+            />
+          </a>
+          <span id="nav-logo-text">SOLHJULET</span>
+        </div>
 
-            <input type="checkbox" id="menu-toggle">
+        <input type="checkbox" id="menu-toggle" />
 
-            <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
-                <span aria-hidden="true">☰</span>
-                <span aria-hidden="true">✕</span>
-            </label>
+        <label
+          for="menu-toggle"
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+        >
+          <span aria-hidden="true">☰</span>
+          <span aria-hidden="true">✕</span>
+        </label>
 
-            <div class="nav-menu">
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../for_residents.html">For Residents</a></li>
-                    <li><a href="#">Facilities and Services</a></li>
-                    <li><a href="#">News and Updates</a></li>
-                    <li><a href="./about.html">About</a></li>
-                </ul>
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="../pages/for_residents.html">For Residents</a></li>
+            <li>
+              <a href="../pages/facilities_services.html"
+                >Facilities and Services</a
+              >
+            </li>
+            <li><a href="../pages/news_updates.html">News and Updates</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+          </ul>
 
-                <div id="nav-login-button">
-                    <button id="navbar-login-button" type="button">LOGIN</button>
-                </div>
-            </div>
-        </nav>
+          <div id="nav-login-button">
+            <button id="navbar-login-button" type="button">LOGIN</button>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="about-page-main">
-        <section class="about-hero">
-            <p class="eyebrow">Our community</p>
-            <h1>About Solhjulet</h1>
-            <p class="subtitle">A community in the heart of the neighbourhood. BRF Solhjulet is a well-managed housing association in Edsberg, Sollentuna.</p>
-        </section>
+      <section class="about-hero">
+        <p class="eyebrow">Our community</p>
+        <h1>About Solhjulet</h1>
+        <p class="subtitle">
+          A community in the heart of the neighbourhood. BRF Solhjulet is a
+          well-managed housing association in Edsberg, Sollentuna.
+        </p>
+      </section>
 
-        <section class="stats-grid">
-            <div class="stat-card">
-                <h2>701</h2>
-                <p class="stat-label">Apartments</p>
+      <section class="stats-grid">
+        <div class="stat-card">
+          <h2>701</h2>
+          <p class="stat-label">Apartments</p>
+        </div>
+        <div class="stat-card">
+          <h2>1957</h2>
+          <p class="stat-label">Established</p>
+        </div>
+        <div class="stat-card">
+          <h2>Shared Spaces</h2>
+          <p class="stat-label">Courtyard, laundry room, recycling room</p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="section-intro">
+          <h2>Get in touch</h2>
+          <p>
+            Get in touch with the board, property management or in case of an
+            emergency. We’re here to help.
+          </p>
+        </div>
+
+        <div class="contact-cards-grid">
+          <div class="contact-card">
+            <div class="card-icon">👥</div>
+            <h3>Board of directors</h3>
+            <p>Questions about the association, meetings or governance.</p>
+            <a href="mailto:board@solhjulet.se">board@solhjulet.se</a>
+            <p class="phone">+46 70 123 45 67</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="card-icon">🏠</div>
+            <h3>Property management</h3>
+            <p>Day-to-day matters, documents and resident questions.</p>
+            <a href="mailto:forvaltning@solhjulet.se"
+              >forvaltning@solhjulet.se</a
+            >
+            <p class="phone">+46 8 123 45 67</p>
+          </div>
+
+          <div class="contact-card emergency">
+            <div class="card-icon">⚠️</div>
+            <h3>Emergency fault</h3>
+            <p>
+              For urgent faults outside office hours (e.g. water leaks, power
+              outage).
+            </p>
+            <p class="phone">+46 77 123 45 67</p>
+            <span class="badge">24/7</span>
+          </div>
+        </div>
+
+        <div class="form-map-grid">
+          <form class="message-form">
+            <h3>Send us a message</h3>
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
             </div>
-            <div class="stat-card">
-                <h2>1957</h2>
-                <p class="stat-label">Established</p>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" required>
+                <option value="" disabled selected>Select subject</option>
+                <option value="general">General inquiry</option>
+                <option value="maintenance">Maintenance</option>
+                <option value="parking">Parking &amp; garage</option>
+              </select>
             </div>
-            <div class="stat-card">
-                <h2>Shared Spaces</h2>
-                <p class="stat-label">Courtyard, laundry room, recycling room</p>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Your message..."
+                required
+              ></textarea>
             </div>
-        </section>
+            <button type="submit" class="submit-btn">Send message</button>
+          </form>
 
-        <section class="contact-section">
-            <div class="section-intro">
-                <h2>Get in touch</h2>
-                <p>Get in touch with the board, property management or in case of an emergency. We’re here to help.</p>
+          <div class="address-card">
+            <h3>Our address</h3>
+            <p>
+              <strong>BRF Solhjulet</strong><br />Kruthornsvägen 8<br />192 32
+              Sollentuna
+            </p>
+            <div class="map-placeholder">
+              <span>📍 Map View</span>
             </div>
-
-            <div class="contact-cards-grid">
-                <div class="contact-card">
-                    <div class="card-icon">👥</div>
-                    <h3>Board of directors</h3>
-                    <p>Questions about the association, meetings or governance.</p>
-                    <a href="mailto:board@solhjulet.se">board@solhjulet.se</a>
-                    <p class="phone">+46 70 123 45 67</p>
-                </div>
-
-                <div class="contact-card">
-                    <div class="card-icon">🏠</div>
-                    <h3>Property management</h3>
-                    <p>Day-to-day matters, documents and resident questions.</p>
-                    <a href="mailto:forvaltning@solhjulet.se">forvaltning@solhjulet.se</a>
-                    <p class="phone">+46 8 123 45 67</p>
-                </div>
-
-                <div class="contact-card emergency">
-                    <div class="card-icon">⚠️</div>
-                    <h3>Emergency fault</h3>
-                    <p>For urgent faults outside office hours (e.g. water leaks, power outage).</p>
-                    <p class="phone">+46 77 123 45 67</p>
-                    <span class="badge">24/7</span>
-                </div>
-            </div>
-
-            <div class="form-map-grid">
-                <form class="message-form">
-                    <h3>Send us a message</h3>
-                    <div class="form-group-row">
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" placeholder="Your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" placeholder="your@email.com" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <select id="subject" required>
-                            <option value="" disabled selected>Select subject</option>
-                            <option value="general">General inquiry</option>
-                            <option value="maintenance">Maintenance</option>
-                            <option value="parking">Parking &amp; garage</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send message</button>
-                </form>
-
-                <div class="address-card">
-                    <h3>Our address</h3>
-                    <p><strong>BRF Solhjulet</strong><br>Kruthornsvägen 8<br>192 32 Sollentuna</p>
-                    <div class="map-placeholder">
-                        <span>📍 Map View</span>
-                    </div>
-                    <a href="https://maps.google.com" target="_blank" class="map-btn">View on map →</a>
-                </div>
-            </div>
-        </section>
+            <a href="https://maps.google.com" target="_blank" class="map-btn"
+              >View on map →</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-column copyright">
-                <p>Copyright Solhjulet</p>
-                <p>All rights reserved.</p>
-            </div>
-
-            <div class="footer-column">
-                <h2>Home</h2>
-                <a href="../index.html">Home</a>
-                <a href="../for_residents.html">Residents</a>
-                <a href="#">News and Updates</a>
-                <a href="#">Facilities and Services</a>
-                <a href="./about.html">About Us</a>
-            </div>
-
-            <div class="footer-column">
-                <h2>Support</h2>
-                <a href="#">Help Center</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Legal</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Status</a>
-            </div>
-
-            <div class="footer-column student-project">
-                <p>This project is made in the student context of Hyper Island.</p>
-            </div>
+      <div class="footer-container">
+        <div class="footer-column copyright">
+          <p>Copyright Solhjulet</p>
+          <p>All rights reserved.</p>
         </div>
-    </footer>
 
-</body>
+        <div class="footer-column">
+          <h2>Home</h2>
+          <a href="../index.html">Home</a>
+          <a href="../for_residents.html">Residents</a>
+          <a href="#">News and Updates</a>
+          <a href="#">Facilities and Services</a>
+          <a href="./about.html">About Us</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Support</h2>
+          <a href="#">Help Center</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Legal</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Status</a>
+        </div>
+
+        <div class="footer-column student-project">
+          <p>This project is made in the student context of Hyper Island.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
