@@ -43,12 +43,6 @@
     outline-offset: 2px;
 }
 
-.nav-links a[aria-current="page"] {
-    text-decoration: underline;
-    text-underline-offset: 6px;
-}
-
-
 /* =========================
    NEWS PAGE
 ========================= */

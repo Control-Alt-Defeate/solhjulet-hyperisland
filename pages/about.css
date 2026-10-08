@@ -113,6 +113,7 @@ body {
     height: 54px;
     border-radius: 14px;
     background: rgba(11, 35, 65, 0.08);
+    color: var(--primary-color);
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
@@ -180,7 +181,7 @@ label {
 input,
 select,
 textarea,
-button {
+.message-form button {
     font: inherit;
 }
 

@@ -32,31 +32,58 @@ reporting and contact details, are hard to find quickly.
 ## Pages
 
 Every page shares the same navigation and footer, and the current page is
-marked in the nav.
+marked in the nav. Both are built by `js/layout.js` (see below).
 
 | Page | File | Status |
 | --- | --- | --- |
-| Home | `index.html` | Hero, nav and footer done |
-| For Residents | `for_residents.html` | Nav and footer done, content to be added |
-| Facilities & Services | `facilities_services.html` | Planned |
-| News & Updates | `pages/news_updates.html` | Done |
-| About Solhjulet | `about.html` | Planned |
-| Contact | _not decided yet_ | Planned |
+| Home | `index.html` | Hero done |
+| For Residents | `pages/for_residents.html` | Content to be added |
+| Facilities & Services | `pages/facilities_services.html` | Built |
+| News & Updates | `pages/news_updates.html` | Built |
+| About Solhjulet | `pages/about.html` | Built, includes contact details |
+| Page not found | `pages/404.html` | Built |
 
 
 ## Project structure
 
 ```text
 solhjulet-hyperisland/
-├── index.html              Home page
-├── for_residents.html      For Residents page
-├── index.css               Shared styles: colours, fonts, nav, footer, home
-├── assets/                 Logo and images
+├── index.html                  Home page
+├── index.css                   Shared styles: colours, fonts, nav, footer, home
+├── js/
+│   └── layout.js               Shared nav and footer for every page
+├── assets/                     Logo and images
 └── pages/
-    ├── news_updates.html   News & Updates page
-    ├── news_updates.css    Styles for the News page only
-    └── news_updates.js     Category filter for the news cards
+    ├── for_residents.html
+    ├── facilities_services.html + .css
+    ├── news_updates.html + .css + .js (category filter)
+    ├── about.html + .css
+    └── 404.html + .css
 ```
+
+### Shared nav and footer
+
+The nav and footer are written once, in `js/layout.js`. Each page only has two
+placeholders and loads the script at the end of `<body>`:
+
+```html
+<div data-site-nav></div>
+<!-- page content -->
+<div data-site-footer></div>
+
+<script src="../js/layout.js"></script>
+```
+
+The script:
+
+- replaces the placeholders with the nav and footer markup,
+- builds every link from the site root, so links work from `index.html` and
+  from pages inside `pages/`,
+- adds `aria-current="page"` to the link for the page you are on, which
+  underlines it in the nav.
+
+The home page uses `<div data-site-nav="home"></div>` inside the hero to get
+the transparent hero navbar.
 
 - **Shared styles** live in `index.css`. Colours, font sizes and button sizes
   are CSS custom properties in `:root`, so the whole site can be re-themed in
@@ -103,11 +130,14 @@ inside `<div class="news-list">` and change:
 
 ### Add a new page
 
-1. Copy the header and footer markup from an existing page.
-2. Fix the paths (`../` if the page is inside `pages/`).
-3. Add `aria-current="page"` to the page's own link in the nav.
-4. Add a link to the new page in the nav and footer on **every** page.
-5. Keep `<meta name="robots" content="noindex">` in the `<head>`.
+1. Create the page in `pages/` and add the two placeholders and the
+   `<script src="../js/layout.js"></script>` line shown above.
+2. Link the shared styles with `../index.css`, then your page's own CSS.
+3. To show the page in the nav and footer, add it to the `pages` list at the
+   top of `js/layout.js`. This updates every page at once.
+4. Keep `<meta name="robots" content="noindex">` in the `<head>`.
+
+To change a nav or footer link or text, edit `js/layout.js` only.
 
 
 ## Accessibility
@@ -146,6 +176,8 @@ Things the site needs that HTML and CSS can't do alone. This list is the
 starting point for the JavaScript course.
 
 - [x] Filter news by category (done in `pages/news_updates.js`)
+- [x] Shared nav and footer with the current page marked (done in
+  `js/layout.js`)
 - [ ] Working login for residents
 - [ ] Open a full news article from the "View" button
 - _More to be added_

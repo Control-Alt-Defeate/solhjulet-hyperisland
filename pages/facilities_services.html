@@ -8,84 +8,12 @@
     <link rel="stylesheet" href="facilities_services.css" />
   </head>
   <body>
-    <header> 
-      <!-- =========================
-         NAVBAR
-    ========================== -->
-
-    <header>
-        <nav class="navbar-other-pages" aria-label="Main navigation">
-
-            <div class="nav-logo-div">
-                <a href="../pages/facilities_services.html" aria-label="Solhjulet home">
-                    <img
-                        id="nav-img-logo"
-                        src="../assets/logo.png"
-                        alt="Solhjulet logo"
-                    >
-                </a>
-
-                <span id="nav-logo-text">
-                    SOLHJULET
-                </span>
-            </div>
-
-            <!-- Mobile menu -->
-            <input type="checkbox" id="menu-toggle">
-
-            <label
-                for="menu-toggle"
-                class="hamburger"
-                aria-label="Toggle navigation menu"
-            >
-                <span>☰</span>
-                <span>✕</span>
-            </label>
-
-            <div class="nav-menu">
-
-                <ul class="nav-links">
-
-                    <li>
-                        <a href="../pages/index.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="../pages/for_residents.html">For residents</a>
-                    </li>
-
-                    <li>
-                        <a href="../pages/facilities_services.html">
-                            Facilities and Services
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="../pages/news_updates.html">
-                            News and Updates
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="../pages/about.html">About</a>
-                    </li>
-
-                </ul>
-
-                <div id="nav-login-button">
-                    <button id="navbar-login-button" type="button">
-                        LOGIN
-                    </button>
-                </div>
-
-            </div>
-
-        </nav>
-    </header>
+    <!------------------------------ HEADER ------------------------------------->
+    <div data-site-nav></div>
 
 
     <main class="facilities-page">
-      <!-- Page Header -->
+      <!------------------------------ PAGE HEADER ------------------------------------->
       <header class="page-header">
         <h1>Facilities and Services</h1>
 
@@ -95,7 +23,7 @@
         </p>
       </header>
 
-      <!-- Search -->
+      <!------------------------------ SEARCH ------------------------------------->
       <div class="search-wrapper">
         <label class="search-box">
           <input
@@ -108,9 +36,9 @@
         </label>
       </div>
 
-      <!-- Services -->
+      <!------------------------------ SERVICES ------------------------------------->
       <section class="services-grid">
-        <!-- Laundry -->
+        <!------------------------------ LAUNDRY ------------------------------------->
         <article class="service-card">
           <div class="card-top">
             <span>Laundry</span>
@@ -134,7 +62,7 @@
           </div>
         </article>
 
-        <!-- Guest Parking -->
+        <!------------------------------ GUEST PARKING ------------------------------------->
         <article class="service-card">
           <div class="card-top">
             <span>Guest parking</span>
@@ -155,7 +83,7 @@
           </div>
         </article>
 
-        <!-- Waste -->
+          <!------------------------------ WASTE ------------------------------------->
         <article class="service-card">
           <div class="card-top">
             <span>Recycling and waste</span>
@@ -177,86 +105,10 @@
         </article>
       </section>
        </main>
-      <!-- =========================
-         FOOTER
-    ========================== -->
+    <!------------------------------ FOOTER ------------------------------------->
+    <div data-site-footer></div>
 
-    <footer class="footer">
-
-        <div class="footer-container">
-
-            <div class="footer-column copyright">
-
-                <div class="footer-logo">
-                    SOLHJULET
-                </div>
-
-                <p>Copyrights Solhjulet</p>
-                <p>All rights reserved.</p>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h2>Home</h2>
-
-                <a href="for_residents.html">Residents</a>
-
-                <a href="news_updates.html">
-                    News and updates
-                </a>
-
-                <a href="../pages/facilities_services.html">
-                    Facilities and services
-                </a>
-
-                <a href="../pages/about.html">
-                    About us
-                </a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h2>Support</h2>
-
-                <a href="#">Help center</a>
-
-                <a href="#">Terms of service</a>
-
-                <a href="#">Legal</a>
-
-                <a href="#">Privacy policy</a>
-
-                <a href="#">Status</a>
-
-            </div>
-
-
-            <div class="footer-column newsletter">
-
-                <h2>Stay up to date</h2>
-
-                <div class="newsletter-input">
-
-                    <input
-                        type="email"
-                        placeholder="Your email address"
-                    >
-
-                    <button type="button" aria-label="Subscribe">
-                        ➤
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </footer>
+    <script src="../js/layout.js"></script>
 
    
   </body>

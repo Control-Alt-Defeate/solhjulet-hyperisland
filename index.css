@@ -18,9 +18,7 @@
   --button-border-radius: clamp(0.5rem, 0.4rem + 0.35vw, 0.625rem);
 }
 
-/* =========================
-   GLOBAL
-========================= */
+/* ========================= GLOBAL ========================= */
 
 * {
   box-sizing: border-box;
@@ -31,9 +29,7 @@ body {
   font-family: var(--font-family);
 }
 
-/* =========================
-   HERO
-========================= */
+/* ========================= HERO ========================= */
 
 .hero {
   position: relative;
@@ -45,9 +41,7 @@ body {
   overflow: hidden;
 }
 
-/* =========================
-   HERO IMAGE
-========================= */
+/* =========================HERO IMAGE ========================= */
 
 .hero-img {
   position: absolute;
@@ -64,9 +58,7 @@ body {
   z-index: 0;
 }
 
-/* =========================
-   HERO TEXT
-========================= */
+/* ========================= HERO TEXT ========================= */
 
 #div-hero-homepage {
   position: absolute;
@@ -98,9 +90,7 @@ body {
   line-height: 1.5;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* ========================= HEADER ========================= */
 
 header {
   background-color: var(--primary-color);
@@ -122,9 +112,7 @@ header {
   z-index: 10;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+/* ========================= NAVIGATION ========================= */
 
 .navbar-homepage {
   position: absolute;
@@ -145,9 +133,7 @@ header {
   z-index: 10;
 }
 
-/* =========================
-   LOGO
-========================= */
+/* ========================= LOGO ========================= */
 
 .nav-logo-div {
   display: flex;
@@ -185,9 +171,7 @@ header {
   color: white;
 }
 
-/* =========================
-   NAV MENU
-========================= */
+/* ========================= NAV MENU ========================= */
 
 .nav-menu {
   display: flex;
@@ -196,9 +180,7 @@ header {
   gap: 2rem;
 }
 
-/* =========================
-   NAV LINKS
-========================= */
+/* ========================= NAV LINKS ========================= */
 
 .nav-links {
   display: flex;
@@ -226,14 +208,17 @@ header {
   opacity: 0.7;
 }
 
+.nav-links a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 .nav-links a:focus-visible {
   outline: 3px solid white;
   outline-offset: 4px;
 }
 
-/* =========================
-   LOGIN
-========================= */
+/* ========================= LOGIN BUTTON ========================= */
 
 #nav-login-button {
   flex-shrink: 0;
@@ -265,9 +250,7 @@ header {
   outline-offset: 4px;
 }
 
-/* =========================
-   HAMBURGER
-========================= */
+/* ========================= HAMBURGER ========================= */
 
 #menu-toggle {
   position: absolute;
@@ -557,22 +540,20 @@ header {
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* ========================= MOBILE ========================= */
 
 @media (max-width: 700px) {
   .navbar-homepage {
     padding: 10px 20px;
   }
 
-  /* Hamburger */
+  /*------------------------------ Hamburger -------------------------------------> */
 
   .hamburger {
     display: block;
   }
 
-  /* Mobile menu */
+  /*------------------------------ Mobile menu -------------------------------------> */
 
   .nav-menu {
     display: none;
@@ -598,7 +579,7 @@ header {
     gap: 20px;
   }
 
-  /* Mobile links */
+  /*------------------------------ Mobile links -------------------------------------> */
 
   .nav-links {
     display: flex;
@@ -619,7 +600,7 @@ header {
     font-size: 1rem;
   }
 
-  /* Mobile login */
+  /*------------------------------ Mobile login -------------------------------------> */
 
   #nav-login-button {
     display: flex;
@@ -631,7 +612,7 @@ header {
     width: 100px;
   }
 
-  /* Change hamburger to X */
+  /*------------------------------ Change hamburger to X -------------------------------------> */
 
   #menu-toggle:checked + .hamburger span:first-child {
     display: none;
@@ -641,7 +622,7 @@ header {
     display: block;
   }
 
-  /* Hero */
+  /*------------------------------ Hero -------------------------------------> */
 
   #div-hero-homepage {
     width: 85%;
@@ -658,9 +639,7 @@ header {
   }
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* ========================= FOOTER ========================= */
 
 .footer {
   background: #0b2341;
@@ -682,9 +661,7 @@ header {
   column-gap: 60px;
 }
 
-/* =========================
-   FOOTER COLUMNS
-========================= */
+/* ========================= FOOTER COLUMNS ========================= */
 
 .footer-column {
   display: flex;
@@ -724,9 +701,7 @@ header {
   outline-offset: 4px;
 }
 
-/* =========================
-   COPYRIGHT
-========================= */
+/* ========================= COPYRIGHT ========================= */
 
 .copyright {
   padding-top: 70px;
@@ -736,9 +711,7 @@ header {
   margin-bottom: 10px;
 }
 
-/* =========================
-   STUDENT PROJECT
-========================= */
+/* ========================= STUDENT PROJECT ========================= */
 
 .student-project {
   padding-top: 70px;
