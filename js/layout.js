@@ -136,3 +136,15 @@ document.querySelectorAll('[data-site-nav]').forEach((placeholder) => {
 document.querySelectorAll('[data-site-footer]').forEach((placeholder) => {
     placeholder.outerHTML = footerTemplate();
 });
+
+const main = document.querySelector('main');
+
+if (main) {
+    main.id ||= 'main-content';
+    main.tabIndex = -1;
+
+    document.body.insertAdjacentHTML(
+        'afterbegin',
+        `<a href="#${main.id}" class="skip-link">Skip to main content</a>`
+    );
+}
