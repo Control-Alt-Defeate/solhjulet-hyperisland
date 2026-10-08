@@ -1,0 +1,248 @@
+body {
+    background: var(--background-color);
+    color: var(--primary-color);
+}
+
+.about-page-main {
+    width: min(1100px, 90%);
+    margin: 7rem auto 4rem;
+    padding-bottom: 2rem;
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.eyebrow {
+    margin: 0 0 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--tertiary-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.about-hero h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2.5rem, 2rem + 2vw, 4rem);
+}
+
+.subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--tertiary-color);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.stat-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 10px 30px rgba(11, 35, 65, 0.08);
+    text-align: center;
+}
+
+.stat-card h2 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(2rem, 1.7rem + 1vw, 3rem);
+}
+
+.stat-label {
+    margin: 0;
+    color: var(--tertiary-color);
+    line-height: 1.5;
+}
+
+.contact-section {
+    display: grid;
+    gap: 2rem;
+}
+
+.section-intro {
+    text-align: center;
+}
+
+.section-intro h2,
+.form-map-grid h3,
+.contact-card h3,
+.address-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.section-intro p {
+    margin: 0 auto;
+    max-width: 740px;
+    color: var(--tertiary-color);
+    line-height: 1.7;
+}
+
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.contact-card,
+.address-card,
+.message-form {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 1.75rem;
+    box-shadow: 0 10px 30px rgba(11, 35, 65, 0.06);
+}
+
+.contact-card {
+    position: relative;
+}
+
+.card-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: rgba(11, 35, 65, 0.08);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card p,
+.contact-card a,
+.address-card p,
+.address-card a {
+    color: var(--tertiary-color);
+    line-height: 1.6;
+}
+
+.contact-card a,
+.map-btn {
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.phone {
+    margin: 0.5rem 0 0;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.emergency {
+    border: 1px solid rgba(11, 35, 65, 0.08);
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(16, 45, 80, 0.08);
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.form-map-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 1.5rem;
+}
+
+.form-group-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(11, 35, 65, 0.15);
+    border-radius: 12px;
+    background: #ffffff;
+    color: var(--primary-color);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.submit-btn {
+    border: none;
+    background: var(--secondary-color);
+    color: #ffffff;
+    padding: 0.85rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.map-placeholder {
+    display: grid;
+    place-items: center;
+    min-height: 170px;
+    margin: 1.25rem 0;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(11, 35, 65, 0.08), rgba(56, 83, 107, 0.12));
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.map-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .stats-grid,
+    .contact-cards-grid,
+    .form-map-grid,
+    .form-group-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-page-main {
+        margin-top: 5rem;
+    }
+
+    .contact-card,
+    .address-card,
+    .message-form {
+        padding: 1.25rem;
+    }
+}
