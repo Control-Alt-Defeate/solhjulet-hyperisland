@@ -12,6 +12,7 @@
   --font-size-heading-md: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
   --font-size-heading-sm: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);
   --font-size-caption: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
+  --font-size-caption-sm: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
 
   --button-height-size: clamp(2rem, 1.7rem + 0.9vw, 2.25rem);
   --button-width-size: clamp(6.25rem, 5rem + 3.9vw, 7.5rem);
@@ -302,7 +303,7 @@ header {
 .facilities h2 {
     margin: 0 0 25px;
 
-    font-size: 1.1rem;
+    font-size: var(--font-size-heading-md);
     font-weight: 700;
 }
 
@@ -331,14 +332,14 @@ header {
 .facility-card h3 {
     margin: 0 0 12px;
 
-    font-size: 0.9rem;
+    font-size: var(--font-size-heading-sm);
     font-weight: 500;
 }
 
 .facility-card p {
     margin: 0 0 15px;
 
-    font-size: 0.7rem;
+    font-size: var(--font-size-caption);
     line-height: 1.5;
 
     color: #d8e0eb;
@@ -400,7 +401,7 @@ header {
 .apartment-intro h2 {
     margin: 0 0 12px;
 
-    font-size: 2rem;
+    font-size: var(--font-size-heading-lg);
 
     line-height: 1;
 }
@@ -408,7 +409,7 @@ header {
 .apartment-intro p {
     margin: 0;
 
-    font-size: 0.7rem;
+    font-size: var(--font-size-caption);
 
     line-height: 1.5;
 }
@@ -427,9 +428,9 @@ header {
 }
 
 .apartment-details h3 {
-    margin: 0 0 15px;
+    margin: 0 0 25px;
 
-    font-size: 1rem;
+    font-size: var(--font-size-heading-sm);
     font-weight: 400;
 
     line-height: 1.2;
@@ -451,16 +452,16 @@ header {
 }
 
 .details-list span {
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 
-    font-size: 0.55rem;
+    font-size: var(--font-size-caption-sm);
     letter-spacing: 0.08em;
 
-    color: #d8e0eb;
+    color: #d8e0eb90;
 }
 
 .details-list strong {
-    font-size: 0.6rem;
+    font-size: var(--font-size-caption);
     font-weight: 400;
 }
 
