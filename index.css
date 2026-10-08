@@ -303,6 +303,220 @@ header {
 }
 
 /* =========================
+   FACILITIES
+========================= */
+
+.facilities {
+    padding: 40px 5%;
+    background-color: white;
+}
+
+.facilities-container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.facilities h2 {
+    margin: 0 0 25px;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.facility-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.facility-card {
+    padding: 18px;
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.facility-card h3 {
+    margin: 0 0 12px;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.facility-card p {
+    margin: 0 0 15px;
+
+    font-size: 0.7rem;
+    line-height: 1.5;
+
+    color: #d8e0eb;
+}
+
+.facility-card a {
+    color: white;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    text-decoration: underline;
+}
+
+.facility-card a:hover {
+    opacity: 0.7;
+}
+
+.facility-card a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+
+/* =========================
+   APARTMENT
+========================= */
+
+.apartment {
+    padding: 50px 5% 25px;
+
+    background-color: white;
+}
+
+.apartment-container {
+    max-width: 1110px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.5fr;
+
+    gap: 35px;
+}
+
+
+/* =========================
+   APARTMENT INTRO
+========================= */
+
+.apartment-intro {
+    align-self: start;
+
+    padding-top: 5px;
+}
+
+.apartment-intro h2 {
+    margin: 0 0 12px;
+
+    font-size: 2rem;
+
+    line-height: 1;
+}
+
+.apartment-intro p {
+    margin: 0;
+
+    font-size: 0.7rem;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   APARTMENT DETAILS
+========================= */
+
+.apartment-details {
+    padding: 15px;
+
+    background-color: var(--primary-color);
+
+    color: white;
+}
+
+.apartment-details h3 {
+    margin: 0 0 15px;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+.details-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.details-list div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.details-list span {
+    margin-bottom: 3px;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.08em;
+
+    color: #d8e0eb;
+}
+
+.details-list strong {
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+
+/* =========================
+   APARTMENT IMAGES
+========================= */
+
+.apartment-images {
+    grid-column: 1 / -1;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.5fr;
+
+    align-items: start;
+
+    gap: 0;
+}
+
+.apartment-images img {
+    display: block;
+
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.apartment-images img:first-child {
+    margin-top: 0;
+}
+
+.apartment-images img:last-child {
+    margin-top: 45px;
+}
+
+/* =========================
    TABLET
 ========================= */
 
@@ -535,7 +749,7 @@ header {
 }
 
 /* =========================
-   FOOTER TABLET
+   TABLET
 ========================= */
 
 @media (max-width: 900px) {
@@ -553,10 +767,39 @@ header {
   .student-project {
     padding-top: 0;
   }
+
+      .facilities {
+        padding: 35px 30px;
+    }
+
+    .facility-cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .apartment {
+        padding: 40px 30px 25px;
+    }
+
+    .apartment-container {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .apartment-details {
+        max-width: 100%;
+    }
+
+    .apartment-images {
+        grid-column: auto;
+    }
 }
 
 /* =========================
-   FOOTER MOBILE
+   MOBILE
 ========================= */
 
 @media (max-width: 700px) {
@@ -591,4 +834,54 @@ header {
   .student-project p {
     max-width: 300px;
   }
+
+  .facilities {
+        padding: 30px 20px;
+    }
+
+    .facility-cards {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .facility-card {
+        padding: 18px;
+    }
+
+
+    .apartment {
+        padding: 35px 20px 20px;
+    }
+
+    .apartment-container {
+        gap: 20px;
+    }
+
+    .apartment-intro h2 {
+        font-size: 1.8rem;
+    }
+
+
+    .details-list {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .apartment-images {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .apartment-images img {
+        height: 220px;
+    }
+
+    .apartment-images img:last-child {
+        margin-top: 0;
+    }
 }
