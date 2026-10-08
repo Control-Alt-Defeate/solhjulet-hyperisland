@@ -102,6 +102,13 @@ body {
     box-shadow: 0 10px 30px rgba(11, 35, 65, 0.06);
 }
 
+.form-demo-note {
+    margin: 0 0 1rem;
+
+    color: var(--tertiary-color);
+    font-size: var(--font-size-caption-sm);
+}
+
 .contact-card {
     position: relative;
 }
@@ -113,6 +120,7 @@ body {
     height: 54px;
     border-radius: 14px;
     background: rgba(11, 35, 65, 0.08);
+    color: var(--primary-color);
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
@@ -180,7 +188,7 @@ label {
 input,
 select,
 textarea,
-button {
+.message-form button {
     font: inherit;
 }
 
