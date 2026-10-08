@@ -102,6 +102,13 @@ body {
     box-shadow: 0 10px 30px rgba(11, 35, 65, 0.06);
 }
 
+.form-demo-note {
+    margin: 0 0 1rem;
+
+    color: var(--tertiary-color);
+    font-size: var(--font-size-caption-sm);
+}
+
 .contact-card {
     position: relative;
 }

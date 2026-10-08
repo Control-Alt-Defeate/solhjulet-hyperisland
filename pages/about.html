@@ -90,8 +90,11 @@
         </div>
 
         <div class="form-map-grid">
-          <form class="message-form">
+          <form class="message-form" aria-describedby="form-demo-note">
             <h3>Send us a message</h3>
+            <p class="form-demo-note" id="form-demo-note">
+              This is a demo form for a student project. Messages are not sent.
+            </p>
             <div class="form-group-row">
               <div class="form-group">
                 <label for="name">Name *</label>
@@ -137,8 +140,13 @@
             <div class="map-placeholder">
               <span>📍 Map View</span>
             </div>
-            <a href="https://maps.google.com" target="_blank" class="map-btn"
-              >View on map →</a
+            <a
+              href="https://maps.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="map-btn"
+              >View on map <span aria-hidden="true">→</span
+              ><span class="visually-hidden"> (opens in a new tab)</span></a
             >
           </div>
         </div>
